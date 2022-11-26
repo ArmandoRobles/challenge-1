@@ -1,0 +1,102 @@
+:root {
+  --softblue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --mainbg-blue: hsl(217, 54%, 11%);
+  --cardbg-blue: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--mainbg-blue);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  height: 450px;
+  background-color: var(--cardbg-blue);
+  padding: 1.1em;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0px 20px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.card-img:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.weight300 {
+  font-weight: 300;
+}
+.weight400 {
+  font-weight: 400;
+}
+.weight600 {
+  font-weight: 600;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.row h4 {
+  color: var(--cyan);
+}
+.row img {
+  margin-right: 3px;
+}
+p {
+  color: var(--softblue);
+  font-size: 0.8em;
+}
+hr {
+  border: 0.25px solid var(--line-blue);
+}
+
+.row-btm {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.row-btm img {
+  width: 1.5rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 15px;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--cyan);
+}
